@@ -28,9 +28,10 @@
 #region Variable declaration
 
 // We read the keyboard input. If the user holds the left or right arrow key, we return true, or 1. (False is 0)
+// My keyboard uses AZERTY (ZQSD); if you use QWERTY (WASD), replace the Q in keyLeft with an A.
 
 var 
-	keyLeft   := keyboard_check(vk_left) or keyboard_check(ord("Q")),
+	keyLeft   := keyboard_check(vk_left) or keyboard_check(ord("Q")), 
 	keyRight  := keyboard_check(vk_right) or keyboard_check(ord("D")),
 	keyJump   := keyboard_check_pressed(vk_space), // keyboard_check_pressed() checks for a single press only, not for holddown
 	
